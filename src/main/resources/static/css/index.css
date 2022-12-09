@@ -1,0 +1,91 @@
+#cuerpo{
+    width: 90% ;
+    margin: 5px auto;
+    padding: 10px auto;
+    background-color: rgb(244, 246, 255)
+
+}
+
+#menu {
+  text-align: justify;
+  background: rgb(213, 176, 17);
+  padding: 10px;
+
+}
+
+
+#titulo{
+    color: darkblue;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+    padding: 30px auto;
+    background-color: rgb(30, 90, 205);
+    height: 80px;
+}
+
+.contenidoprin2 {
+  float: right;
+  width: 280px;
+  margin: 10px;
+}
+
+.contenidoprin {
+	text-align: justify;
+  float: center;
+ 
+  width: 650px;
+  margin: 10px;
+
+}
+
+
+
+#contenido {
+    color: darkblue;
+    font-size: 8;
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px auto;
+    height: 100px;
+}
+
+.estiloImg{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+#conEst{
+  text-align: right;
+  color: brown;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pie2{
+    clear: both;
+    width: 90%;
+    margin: 10px auto;
+    height: 60px;
+    padding: 10px auto;
+    background-color: rgb(206, 113, 7);
+}
+
+#conForm {
+	width: 75%;
+	margin: 10px auto;
+	background-color: rgb(217, 235, 249);
+	
+}
+
+.textClass{
+	text-align: center;
+	background-color: rgb(181, 215, 242);
+}
+
+
+
+	
+
+

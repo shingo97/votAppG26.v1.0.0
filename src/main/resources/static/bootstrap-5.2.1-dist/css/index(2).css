@@ -1,0 +1,70 @@
+#cuerpo{
+    width: 90% ;
+    margin: 5px auto;
+    padding: 10px auto;
+    background-color: rgb(251, 229, 214)
+
+}
+
+#menu {
+  text-align: justify;
+  background: rgb(235, 205, 168);
+  padding: 10px;
+  border: 20px rgb(235, 205, 168);
+}
+
+
+#titulo{
+    color: darkblue;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+    padding: 30px auto;
+    background-color: rgb(248, 203, 173);
+    height: 120px;
+}
+
+.contenidoprin2 {
+  float: right;
+  width: 280px;
+  margin: 10px;
+}
+
+.contenidoprin {
+  float: left;
+  clear: both;
+  width: 650px;
+  margin: 10px;
+
+}
+
+#contenido{
+    color: darkblue;
+    font-size: 8
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px auto;
+    height: 100px;
+}
+
+.estiloImg{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+#conEst{
+  text-align: right;
+  color: brown;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pie2{
+    clear: both;
+    width: 90%;
+    margin: 10px auto;
+    height: 60px;
+    padding: 10px auto;
+    background-color: rgb(206, 113, 7);
+}

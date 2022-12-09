@@ -1,0 +1,134 @@
+h1,
+h3 {
+  color: #ad3422;
+  font-weight: normal;
+  font-size: 25px;
+  font-family: Arial;
+  text-transform: lowercase;
+}
+
+#cuerpo {
+  font-weight: lighter;
+  width: 1200px;
+  margin: 20px auto;
+  padding: 10px auto;
+  background: beige;
+}
+
+#titulo {
+  background-image-source: url(tituloppg.jfif);
+  color: rgb(192, 71, 71);
+  text-align: center;
+  margin: 10px auto;
+  padding: 20px auto;
+  height: 200px;
+}
+
+.identificacion {
+  text-align: center;
+  font-family: verdana;
+  font size="18"
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: justify;
+  font-family: verdana;
+  font size="18"
+  color: black;
+}
+
+td {
+  vertical-align: top;
+  color: black;
+  text-align: justify;
+  margin: 10px auto;
+  padding: 20px auto;
+  height: 80px;
+}
+
+table {
+  margin-block-start: 2px;
+  table-layout: fixed;
+  width: 80%;
+  border: 20px aqua;
+}
+
+.fondo {
+  background-color: rgb(249, 238, 171);
+}
+
+#tituloPartido {
+  font-size: 12;
+  color: rgb(131, 39, 131);
+  text-align: center;
+  width: 900px;
+  font-size: 40px;
+  border: 1px solid rgb(201, 163, 136);
+  background-color: bisque;
+}
+
+#img.1 {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#menu {
+  text-align: justify;
+  background: rgb(235, 205, 168);
+  padding: 10px;
+  border: 20px rgb(235, 205, 168);
+}
+
+.contenidoprin {
+  float: left;
+  clear: both;
+  width: 650px;
+  margin: 10px;
+
+}
+
+.contenidoprin2 {
+  float: right;
+  width: 280px;
+  margin: 10px;
+}
+
+#pie {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: purple;
+}
+
+.div1 {
+  width: 600px;
+  float: left;
+  margin: 10px:;
+  padding: 2px;
+}
+
+.fotopartido {
+  float: right;
+  width: 400px;
+  margin: 10px:;
+  padding: 40px;
+}
+
+#fotointroduccion {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
+.pie2{
+    clear: both;
+    width: 90%;
+    margin: 10px auto;
+    height: 60px;
+    padding: 10px auto;
+    background-color: rgb(206, 113, 7);
+}

@@ -1,0 +1,68 @@
+#encabezado{
+    margin: auto;
+    width: 80%;    
+    padding: 10px auto;
+    background-color: rgb(55, 6, 133);
+    height: 200px;
+    text-align: center;
+}
+nav{
+    margin: auto;
+    width: 700px;
+    height: 60px;
+    
+}
+
+#contenido1{
+    margin: 30px auto;
+    color: rgb(92, 90, 90);
+    text-align: center;      
+    padding: 20px  auto;
+    width: 60%;
+    float: left;
+}
+
+aside{
+    margin: 80px auto;
+    margin-left: 20px;     
+    padding: 20px auto;
+    width: 38%;
+    float: right;
+}
+h3{
+    text-align: center;
+    color: rgb(218, 74, 8);
+}
+
+p{
+    text-align: center;
+}
+.styleImg {
+    width: 400px;
+    text-align: right;
+}
+
+.styleImg2 {
+    width: 40px;
+    
+   
+}
+#table{
+    width: 50%;
+    margin: 5px auto;
+    padding: 10px auto;
+    height: 100px;
+    border: #1C1C1C;
+    text-align: left;
+}    
+
+#pie {
+    clear: both;
+    width: 90%;
+    margin: 10px auto;
+    height: 60px;
+    padding: 10px auto;
+    background-color: rgb(206, 113, 7);
+
+}
+

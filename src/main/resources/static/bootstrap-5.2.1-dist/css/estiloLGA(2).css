@@ -1,0 +1,37 @@
+body {
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px auto;
+}
+
+#menu {
+    text-align: center;
+    background-color: rgb(69, 7, 75);
+    padding: 1px;
+    border: 3px #08ee54 solid;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(232, 235, 19);
+    
+}
+
+#titulo {
+    color: rgb(7, 10, 7);
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px auto;
+    height: 80px;
+    font-size: 25;
+}
+
+
+
+.contenido3{
+ 
+    float: center;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html "http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+<head>
+	<title>votApp v.2.0</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+
+</head>
+
+<body id="cuerpo">
+
+
+	<form name="VOT" th:object="${voto}" method="post" th:action="@{/voto}">
+		<input type="hidden" name="identificacion" id="identificacion" th:value="*{identificacion}">
+	</form>
+	<div id="titulo">
+		<h1>
+			<center><strong>
+					<font color="white" size="8">APLICACIÓN WEB PARA LAS VOTACIONES EN COLOMBIA 2022</font>
+			</center>
+		</h1></strong><br><br>
+	</div>
+
+
+	<center><img src="img/colombia.jpg" width="500" height="400"></center>
+	<center>
+		<hr width="100%">
+	</center>
+
+	<nav id="menu">
+		<ul class="nav justify-content-end">
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" th:href="@{/equipoPorColombia}">Equipo por Colombia</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" th:href="@{/pactoHistorico}">Pacto historico</a>
+			</li>
+
+
+			<li class="nav-item">
+				<a class="nav-link active" th:href="@{/ligaAnticorrupcion}">Liga de Gobernantes Anti-Corrupcion</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" th:href="@{/centroEsperanza}">Centro Esperanza</a>
+			</li>
+		</ul>
+	</nav>
+	<center>
+		<hr width="100%">
+	</center>
+
+
+
+	<p>
+		<font color="black" size="5">
+			Este 29 de mayo serán las elecciones presidenciales de Colombia en 2022, día en que se podría definir
+			quién
+			será el próximo presidente del país por los próximos cuatro años. También, se conocería si se irá o no a
+			segunda vuelta.
+			A pocos días de estas votaciones, miles de colombianos siguen con dudas de cómo votar, cómo consultar
+			los
+			candidatos .<br><br>
+			En la Aplicación votApp encontrará los diferentes candidatos presidenciales de Colombia para la
+			votación, a
+			continuación se relaciona la información de cada uno de los candidatos y su partido político para que
+			conozca sus planes de gobierno y la información relevante para la mejor elección.</font>
+	</p>
+
+	<br>
+
+	<!-- 3. Colocan la tabla con la información de los candidatos (mínimo 4, el contenido y formato a su gusto) -->
+	<center>
+		<hr width="80%">
+	</center>
+
+	<h5>Seleccione el candidato y presione el botón 'Registrar voto': </h5>
+
+	<center>
+		<hr width="80%">
+	</center>
+
+
+
+	<div class="contenido">
+		<table class="table table-striped table-hover">
+			<thead>
+				<th scope="col"><input type="radio" name="idenCandidato" id="idenCandidato" value="1091"> Candidato 1</th>
+				<th scope="col"><input type="radio" name="idenCandidato" id="idenCandidato" value="6035"> Candidato 2</th>
+
+			</thead>
+			<tr>
+				<td width="100">
+					<img src="img/federico-removebg-preview.png" class="estiloImg"><br>
+
+					<p align="center">
+						<font size="6">
+							Federico Gutierrez </font> <br>
+						<font color="purple" size="6"> Equipo por Colombia</font>
+					</p><br>
+
+					<p align="justify">
+						También conocido por su apodo Fico, es un ingeniero civil, consultor de seguridad y político
+						colombiano, líder de la coalición política Equipo por Colombia. Fue consultor en seguridad
+						urbana en varios países de América del Sur, ejerció como concejal de Medellín, entre 2004 y
+						2012, y como alcalde de esa ciudad, entre 2016 y 2020.Federico Gutiérrez es bachiller del
+						gimnasio Los Alcázares de Sabaneta, estudió ingeniería civil de la Universidad de Medellín.
+						Posteriormente realizó una especialización en Alta Gerencia.<br>
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<!--<button class="btn btn-primary" type="button" onclick="javascript:votar(0);">VOTAR</button>-->
+
+						<!--<a th:href="@{/partidoEquipoPorColombia}"><button class="btn btn-primary" type="button">PARTIDO
+								POLÍTICO</button></a>-->
+					</div>
+					<br>
+					</p>
+				</td>
+				<td width="100">
+					<img src="img/gustavo-removebg-preview.png " class="estiloImg"><br>
+					<p align="center">
+						<font size="6">
+							Gustavo Petro</font> <br>
+						<font color="red" size="6"> Pacto Histórico</font>
+					</p><br>
+
+					<p align="justify">
+						Fue senador de la república por el Polo Democrático Alternativo (PDA), cargo al que accedió en
+						las elecciones de 2006.En el 2009, renunció a su cargo para aspirar a la presidencia de
+						Colombia, en las elecciones de 2010, en representación del mismo partido. Tras su salida del
+						Polo Democrático, funda el Movimiento Progresistas (posteriormente Colombia Humana) con el que
+						llegó a la alcaldía de Bogotá, gobernándola entre 2012 y 2015.<br>
+						<br>
+
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<!--<button class="btn btn-primary" type="button" onclick="javascript:votar(1);">VOTAR</button> <a th:href="@{/partidoPactoHistoric}"><button class="btn btn-primary" type="button">PARTIDO POLÍTICO</button></a> -->
+					</div>
+					<br>
+					</p>
+				</td>
+			</tr>
+		</table>
+
+
+
+
+		<table class="table table-striped table-hover">
+			<thead>
+				<th scope="col"><input type="radio" name="idenCandidato" id="idenCandidato" value="8815"> Candidato 3</th>
+				<th scope="col"><input type="radio" name="idenCandidato" id="idenCandidato" value="1090"> Candidato 4</th>
+
+			</thead>
+			<tr>
+				<td width="100">
+					<img src="img/rodolfo-removebg-preview.png" class="estiloImg"><br>
+					<p align="center">
+						<font size="6">
+							Rodolfo Hernández </font> <br>
+						<font color="amber" size="6"> Liga de <br> Gobernantes <br> Anticorrupción</font>
+					</p><br>
+					<p align="justify">
+						Es líder del partido político Liga de Gobernantes Anticorrupción desde 2019.
+
+						Fue alcalde de Bucaramanga entre 2016 y 2019, cargo del cual renunció al ser suspendido
+						previamente por propaganda política. En junio de 2021 inscribiría su candidatura independiente a
+						la Presidencia de Colombia para las elecciones presidenciales. En dichas elecciones obtuvo la
+						cantidad de votos para llegar a segunda vuelta pero no los suficientes para consagrarse como
+						presidente. Debido al estatuto de oposición, obtuvo una curul como senador de la república,
+						donde estuvo entre julio y septiembre de 2022.<br>
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<!--<button class="btn btn-primary" type="button" onclick="javascript:votar(2);">VOTAR</button>
+						<a th:href="@{/partidoLigadeGobernantesAnticorrupcion}"><button class="btn btn-primary"
+								type="button">PARTIDO POLÍTICO</button></a> -->
+					</div>
+					<br>
+
+					</p>
+				</td>
+				<td width="100">
+					<img src="img/sergio-removebg-preview8.png" class="estiloImg"><br>
+					<p align="center">
+						<font size="6">
+							Sergio Fajardo </font> <br>
+						<font color="green" size="6"> Coalición <br> Centro <br> Esperanza </font>
+					</p><br>
+					<p align="justify">
+						Es matemático de la Universidad de los Andes, magíster y doctor en matemáticas de la Universidad
+						de Wisconsin, magíster de la Universidad de los Andes y doctor Honoris Causa de la Universidad
+						Internacional Menéndez Pelayo, España (2009) y la Universidad Nacional de Córdoba, Argentina
+						(2015).Fue Gobernador de Antioquia (2012-2015). Su plan de desarrollo “Antioquia la Más Educada”
+						(2012-2015), fue premiado el mejor del país, y gracias a su ejecución, obtuvo el reconocimiento
+						de mejor Gobernador otorgado por la Fundación Colombia Líder.<br>
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<!--<button class="btn btn-primary" type="button" onclick="javascript:votar(3);">VOTAR</button>
+						<a th:href="@{/partidoCoalicionCentroEsperanza}"><button class="btn btn-primary"
+								type="button">PARTIDO POLÍTICO</button></a>-->
+					</div>
+					<br>
+					</p>
+				</td>
+			</tr>
+		</table>
+
+		<center> 
+			<hr width="100%">
+		</center>
+
+	</div>
+
+	<div id="conButton">
+		<!--<a th:href="@{/nuevoVotante}"><button class="btn btn-primary" type="button">REGISTRAR VOTANTE</button></a>-->
+
+		<td colspan="2"><button type="submit" class="btn btn-primary" style="display:block;">Registrar voto</button>
+		</td>
+	</div>
+
+	<div>
+		<center><button type="button" class="btn btn-primary" onclick="javascript:estadistica();">Ver Resultados
+				Consolidados</button> |<button type="button" class="btn btn-danger">Ver Resultados por Región</button>|
+			<button type="button" class="btn btn-warning">Ver Resultados por Ciudad</button>|
+		</center>
+		<hr width="100%">
+		<div id="conEst"> </div>
+		<canvas id="grafica"></canvas>
+		<script th:src="@{js/votaApp.js}"></script>
+	</div>
+
+	<center>
+		<footer id="pie">
+			<h5>&#169; copyright GRUPO 26 UNAB-MISIONMINTIC</h5>
+		</footer>
+	</center>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+#encabezado{
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px auto;
+    background-color: rgb(11, 230, 200);
+    height: 150px;
+}
+
+#Contenido1{
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px auto;
+    background-color: rgb(241, 222, 210);
+   
+}

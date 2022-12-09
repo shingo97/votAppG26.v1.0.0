@@ -1,0 +1,62 @@
+<html "http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+<head>
+	<title>votApp v.2.0</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+
+</head>
+
+<body id="cuerpo">
+	<header>
+
+		<div id="titulo">
+			<h1>
+				<center><strong>
+						<font color="white" size="8">APLICACIÓN WEB PARA LAS VOTACIONES EN COLOMBIA 2022</font>
+				</center>
+			</h1></strong><br><br>
+		</div>
+
+		<center><img src="img/colombia.jpg" width="500" height="400"></center>
+		<center>
+			<hr width="100%">
+		</center>
+
+	</header>
+
+	<aside style="width: 40%; margin: 15px auto;padding: 15px auto;">
+		<form name="ING" th:action="@{/validar}" method="post" th:object="${votante1}">
+			<div class="mb-3">
+				<label for="identificacion" class="form-label">Identificación: </label>
+				<input type="number" class="form-control" name="identificacion" required id="identificacion"
+					aria-describedby="IdenHelp">
+				<div id="IdenHelp" class="form-text">Digite su número de identificación (solo números).</div>
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Password</label>
+				<input type="password" class="form-control" id="clave" name="clave" required aria-describedby="passHelp">
+				<div id="passHelp" class="form-text">Digite su contraseña.</div>
+			</div>
+			
+			<button type="submit" class="btn btn-primary">Ingresar</button>
+		</form>
+
+
+	</aside>
+ 
+
+
+
+
+
+
+
+	</bodyid="cuerpo">
+
+</html>
